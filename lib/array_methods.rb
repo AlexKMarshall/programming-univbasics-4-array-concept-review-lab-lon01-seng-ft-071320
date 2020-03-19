@@ -10,9 +10,10 @@ end
 def find_max_value(array)
   result = -999
   array.length.times do |index|
-    if array[index] > result
-      result = array[index]
-    end
+    result = array[index] > result ? array[index] : result
+    #if array[index] > result
+    #  result = array[index]
+    #end
   end
   result
 end
